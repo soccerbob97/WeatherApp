@@ -1,9 +1,20 @@
 import React from "react";
+import {View, SafeAreaView, FlatList,Text, StyleSheet,TouchableOpacity} from 'react-native'
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from "expo-font";
-
 import Home from "./screens/Home";
+import {listSavedLocations } from "./src/graphql/queries";
+import Amplify, {Auth} from 'aws-amplify';
+import config from './src/aws-exports';
+import {withAuthenticator} from 'aws-amplify-react-native';
+import { COLORS, SIZES, SHADOWS, FONTS, assets } from "./constants/theme";
+Amplify.configure({
+  ...config,
+  Analytics: {
+    disabled: true,
+  },
+});
 
 const theme = {
   ...DefaultTheme,
@@ -29,8 +40,9 @@ const App = () => {
       <Stack.Navigator screenOptions={{headerShown: false,}} initialRouteName="Home">
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
+      
     </NavigationContainer>
   );
 };
 
-export default App;
+export default withAuthenticator(App);

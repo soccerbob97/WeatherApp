@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-realweatherappauth-staging-164044-authRole",
+      "UnauthRoleArn": "arn:aws:iam::208233672402:role/amplify-realweatherappauth-staging-164044-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::208233672402:role/amplify-realweatherappauth-staging-164044-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-realweatherappauth-staging-164044-deployment",
+      "UnauthRoleName": "amplify-realweatherappauth-staging-164044-unauthRole",
+      "StackName": "amplify-realweatherappauth-staging-164044",
+      "StackId": "arn:aws:cloudformation:us-east-1:208233672402:stack/amplify-realweatherappauth-staging-164044/7affcd10-31f0-11ed-b917-0edba0692fc5",
+      "AmplifyAppId": "d2v4w0s14kwuay"
+    },
+    "categories": {
+      "auth": {
+        "RealWeatherAppAuth": {}
+      }
+    }
+  }
+}

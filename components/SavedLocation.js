@@ -8,11 +8,9 @@ import { COLORS, SIZES, SHADOWS, FONTS, assets } from "../constants/theme";
 const SavedLocation = ({data,deleteButtonOnClick}) => {
   const navigation = useNavigation();
   //console.log("data weather " + data.weather[0].description);
-  const imageUrl =  `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  const degrees = `${data.main.temp}°F`;
-  const location = `${data.name}, ${data.sys.country}`;
-
-
+  const imageUrl =  data.imageUrl;
+  const degrees = data.degrees;
+  const location = data.location;
   return (
     <View
       style={{

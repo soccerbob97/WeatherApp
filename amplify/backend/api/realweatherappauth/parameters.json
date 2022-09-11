@@ -1,0 +1,12 @@
+{
+  "AppSyncApiName": "realweatherappauth",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authRealWeatherAppAuth",
+      "Outputs.UserPoolId"
+    ]
+  },
+  "AuthModeLastUpdated": "2022-09-11T19:06:32.792Z"
+}
