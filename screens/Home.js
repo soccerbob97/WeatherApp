@@ -152,6 +152,8 @@ const Home = () => {
     { label: 'Atlanta, Georgia, USA', value: '1', city:'Atlanta', stateCode:'GA', countryCode:'US'},
     { label: 'London, United Kingdom', value: '2', city:'London', stateCode:'N/A', countryCode:'GB'},
     { label: 'Mountain View, Calfornia, USA', value: '3', city:'Mountain View', stateCode:'CA', countryCode:'US'},
+    { label: 'Shanghai, China', value: '5', city:'Shanghai', stateCode:'N/A', countryCode:'CN'},
+    { label: 'Miami, Florida, USA', value: '6', city:'Miami', stateCode:'FL', countryCode:'US'},
     { label: 'Bangalore, India', value: '4', city:'Bangalore', stateCode:'N/A', countryCode:'IN'},
 
   ];
